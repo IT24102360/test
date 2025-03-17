@@ -2,9 +2,282 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Package Customization</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome for icons (Optional) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .hero {
+            background: url('images/R.jpeg') center/cover no-repeat;
+            text-align: center;
+            padding: 100px 10px;
+            color: white;
+            position: relative;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+        }
+
+        .hero-text {
+            position: relative;
+            z-index: 1;
+        }
+
+        .book-btn {
+            background-color: #4054B2;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .book-btn:hover {
+            background-color: #334499;
+        }
+
+        footer {
+            background: #4054B2;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        #why-book-us ul {
+            list-style-type: none;
+        }
+    </style>
 </head>
 <body>
-<h1>helllo worl</h1>
+
+<!-- Topbar Start -->
+<div class="container-fluid bg-light pt-3 d-none d-lg-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <p><i class="fa fa-envelope mr-2"></i>chamiduprabodya430@gmail.com</p>
+                    <p class="text-body px-3">|</p>
+                    <p><i class="fa fa-phone-alt mr-2"></i>0762124477</p>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-primary px-3" href="https://www.facebook.com" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-primary px-3" href="http://Wa.me/+94762124477" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a class="text-primary px-3" href="">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-primary px-3" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-primary pl-3" href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Topbar End -->
+
+
+<!-- Navbar Start -->
+<div class="container-fluid position-relative nav-bar p-0">
+    <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+
+            <a href="" class="navbar-brand">
+                <h1 class="m-0 text-primary"><span class="text-dark">TRAVEL</span>ER</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                <div class="navbar-nav ml-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+
+                    <a href="package.html" class="nav-item nav-link">Tour Packages</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Day tours</a>
+                        <div class="dropdown-menu border-0 rounded-0 m-0">
+
+                            <a href="destination.html" class="dropdown-item">day tour from galle</a>
+                            <a href="guide.html" class="dropdown-item">day tour from colombo</a>
+                            <a href="testimonial.html" class="dropdown-item">day tour from kandy </a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Navbar End -->
+
+
+<!-- Hero Section -->
+<header class="hero">
+    <div class="hero-text">
+        <h1>Explore Your Dream Destinations</h1>
+        <p>Customize your tour package with ease.</p>
+        <a href="#packages" class="btn book-btn">View Packages</a>
+    </div>
+</header>
+
+
+<!-- About Start -->
+<div class="container-fluid py-5">
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-lg-6" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-80" src="images/MAIN.png" style="max-width: 100%; height: auto; width: 400px;">
+                    >
+                </div>
+            </div>
+            <div class="col-lg-6 pt-5 pb-lg-5">
+                <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
+                    <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">About Us</h6>
+                    <h1 class="mb-3">We Provide Best Tour Packages In Your Budget</h1>
+                    <p>Sri Lanka Dream Tours is a leading Tour Operator & Travel Agent in Sri Lanka, offering authentic journeys into iconic destinations to explore hidden treasures, learn about different endearing cultures, legendary traditions and real history of a historical country. Our programs are crafted to meet the needs of each guest; we have resourceful well-trained, insightful and knowledgeable local guides that cheerfully handle you with personal and outstanding professionalism to ensure that you enjoy unmatched and authentic experience.</p>
+                    <div class="row mb-4">
+                        <div class="col-6">
+                            <img class="img-fluid" src="images/taj.jpg" alt="">
+                        </div>
+                        <div class="col-6">
+                            <img class="img-fluid" src="images/boat.jpg" alt="">
+                        </div>
+                    </div>
+                    <a href="" class="btn btn-primary mt-1">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+
+<!-- Packages Section -->
+<section id="packages">
+    <h2>Popular Packages</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="package">
+                    <img src="images/hony.jpeg" alt="Honeymoon Package" class="img-fluid">
+                    <h3>Honeymoon in Paradise</h3>
+                    <p>13 Days</p>
+                    <button class="btn book-btn">Book Now</button>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="package">
+                    <img src="images/ele.jpeg" alt="Wildlife Tour" class="img-fluid">
+                    <h3>Wildlife Tour</h3>
+                    <p>14 Days</p>
+                    <button class="btn book-btn">Book Now</button>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="package">
+                    <img src="images/anuradhapura-ancient-city-tuk-tuk-tour-3.webp" alt="Cultural Triangle" class="img-fluid">
+                    <h3>Cultural Triangle</h3>
+                    <p>09 Days</p>
+                    <button class="btn book-btn">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+    <div class="row pt-5">
+        <div class="col-lg-3 col-md-6 mb-5">
+            <a href="" class="navbar-brand">
+                <h1 class="text-primary"><span class="text-white">TRAVEL</span>ER</h1>
+            </a>
+            <p>Sed ipsum clita tempor ipsum ipsum amet sit ipsum lorem amet labore rebum lorem ipsum dolor. No sed vero lorem dolor dolor</p>
+            <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
+            <div class="d-flex justify-content-start">
+                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Our Services</h5>
+            <div class="d-flex flex-column justify-content-start">
+                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About</a>
+                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Destination</a>
+                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Services</a>
+                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Packages</a>
+                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Guides</a>
+                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Testimonial</a>
+                <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Usefull Links</h5>
+            <div class="d-flex flex-column justify-content-start">
+                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About</a>
+                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Destination</a>
+                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Services</a>
+                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Packages</a>
+                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Guides</a>
+                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Testimonial</a>
+                <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
+            <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
+            <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
+            <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+
+
+</div>
+</div>
+<!-- Footer End -->
+
+
+<!-- Bootstrap JS & jQuery -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
